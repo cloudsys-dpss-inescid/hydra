@@ -157,6 +157,7 @@ public class Function {
                     return LambdaExecutionMode.KNATIVE;
                 } else if (getRuntime().equals(Environment.FAASTION_RUNTIME) ||
                            getRuntime().equals(Environment.FAASTION_OW_RUNTIME) ||
+                           getRuntime().equals(Environment.FAASTION_HY_RUNTIME) ||
                            getRuntime().equals(Environment.FAASTION_KN_RUNTIME)) {
                     return LambdaExecutionMode.FAASTION;
                 } else {

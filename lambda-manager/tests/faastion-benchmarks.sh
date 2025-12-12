@@ -12,8 +12,8 @@ DATA_ADDRESS="http://$DATA_IP:$DATA_PORT"
 BENCHMARK_HOME_DIR="$ARGO_HOME/../faastion/benchmarks/src/java/SeBS"
 
 FAASTION_BENCHMARKS=(fa_cl  fa_dn  fa_dh  fa_bf  fa_co  fa_ms  fa_pr  fa_th  fa_up  fa_vp) # full list
-FAASTION_BENCHMARKS=(fa_dn  fa_dh  fa_bf  fa_co  fa_ms  fa_pr  fa_th  fa_up) # working
-
+FAASTION_BENCHMARKS=(fa_dn  fa_dh  fa_bf  fa_ms  fa_pr  fa_up) # working
+FAASTION_BENCHMARKS=(fa_cl  fa_dn  fa_dh  fa_bf  fa_co  fa_ms  fa_pr  fa_th  fa_up) # may be working fine if not pushing too much concurrency
 
 declare -A BENCHMARK_CODE
 BENCHMARK_CODE[fa_cl]="$DATA_ADDRESS/apps/libclassify.zip"
